@@ -1,5 +1,3 @@
-// grab our client with destructuring from the export in index.js
-// const { client } = require('./index');
 
 const {  
   client,
@@ -17,7 +15,6 @@ async function dropTables() {
   try {
     console.log("Starting to drop tables...");
 
-    // have to make sure to drop in correct order
     await client.query(`
       DROP TABLE IF EXISTS posts;
       DROP TABLE IF EXISTS users;
