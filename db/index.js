@@ -315,7 +315,7 @@ async function getAllTags() {
 
   return { rows }
   } catch (error) {
-    throw error;
+    throw ("getalltags is messed up", error);
   }
 }
 
